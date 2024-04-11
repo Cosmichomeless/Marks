@@ -1,139 +1,480 @@
-@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+@import url("https://fonts.cdnfonts.com/css/cascadia-code");
 
-
+/* Tema oscuro */
 @media (prefers-color-scheme: dark) {
+    /* Resolución 1440p */
+    @media (min-width: 2560px) {
         :root {
-            background-image: url('Assets/human.jpeg');
-                background-size: cover;
-                font-family: 'cascadia code', cursive;
-                scale: 0.70;
+            background-image: url("Assets/oscuro.jpg");
+            background-size: contain;
+            font-family: "cascadia code", cursive;
+            scale: 0.7;
+        }
+
+        .cards {
+            display: grid;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-content: center;
+            grid-template-columns: auto auto auto auto auto auto auto;
+            gap: 20px;
+        }
+
+        .card {
+            position: static;
+            width: 32vh;
+            height: 27vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 12px;
+            gap: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            backdrop-filter: blur(4px);
+        }
+
+        .card img:hover {
+            transition: 1s;
+            scale: 1.2;
+        }
+
+        .card img {
+            width: 90%;
+            height: 90%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            left: -5px;
+            margin: auto;
+            width: 300;
+            height: 264px;
+            border-radius: 50px;
+            background-color: #1d151bc4;
+            backdrop-filter: blur(5px);
+            opacity: 0.2;
+            z-index: -10;
+            pointer-events: none;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card:hover::after {
+            filter: blur(30px);
+        }
+
+        .card:hover::before {
+            transition: 1s;
+            transform: rotateY(180deg) rotateZ(180deg);
+        }
+
+        .card::after {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            inset: 0;
+            transform: translate3d(0, 0, 0) scale(0.95);
+            filter: blur(20px);
+        }
+
+        .card-content {
+            text-align: end;
+        }
+
+        #title {
+            font-family: "cascadia code", cursive;
+            color: lightseagreen;
+            scale: 1.5;
+        }
+
+        .busq {
+            font-family: cascadia code;
+            font-size: 40px;
+            color: aliceblue;
+            background-color: rgba(202, 187, 126, 0.015);
+            backdrop-filter: blur(5px);
+            border: 4px groove #af7fa87f;
+            border-radius: 25px;
+            padding: 10px;
+            width: 50%;
+            height: 100%;
+            resize: none;
+            outline: none;
+            scale: 1;
+            transition: 0.3s;
+            margin-bottom: 50px;
+        }
+
+        .busq:hover {
+            transition: 0.5s;
+            border: 4px groove #af7fa87f;
+            scale: 1.2;
+            background-color: #af7fa87f;
+            color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         }
     }
+
+    /* Resolución 1080p */
+    @media (min-width: 1920px) and (max-width: 2559px) {
+        :root {
+            background-image: url("Assets/oscuro.jpg");
+            background-size: contain;
+            font-family: "cascadia code", cursive;
+            scale: 0.7;
+        }
+
+        .cards {
+            display: grid;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-content: center;
+            grid-template-columns: auto auto auto auto auto auto auto;
+            gap: 20px;
+        }
+
+        .card {
+            position: static;
+            width: 32vh;
+            height: 27vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 12px;
+            gap: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            backdrop-filter: blur(4px);
+        }
+
+        .card img:hover {
+            transition: 1s;
+            scale: 1.2;
+        }
+
+        .card img {
+            width: 90%;
+            height: 90%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            left: -5px;
+            margin: auto;
+            width: 300;
+            height: 264px;
+            border-radius: 50px;
+            background-color: #1d151bc4;
+            backdrop-filter: blur(5px);
+            opacity: 0.2;
+            z-index: -10;
+            pointer-events: none;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card:hover::after {
+            filter: blur(30px);
+        }
+
+        .card:hover::before {
+            transition: 1s;
+            transform: rotateY(180deg) rotateZ(180deg);
+        }
+
+        .card::after {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            inset: 0;
+            transform: translate3d(0, 0, 0) scale(0.95);
+            filter: blur(20px);
+        }
+
+        .card-content {
+            text-align: end;
+        }
+
+        #title {
+            font-family: "cascadia code", cursive;
+            color: lightseagreen;
+            scale: 1.5;
+        }
+
+        .busq {
+            font-family: cascadia code;
+            font-size: 40px;
+            color: aliceblue;
+            background-color: rgba(202, 187, 126, 0.015);
+            backdrop-filter: blur(5px);
+            border: 4px groove #af7fa87f;
+            border-radius: 25px;
+            padding: 10px;
+            width: 50%;
+            height: 100%;
+            resize: none;
+            outline: none;
+            scale: 1;
+            transition: 0.3s;
+            margin-bottom: 50px;
+        }
+
+        .busq:hover {
+            transition: 0.5s;
+            border: 4px groove #af7fa87f;
+            scale: 1.2;
+            background-color: #af7fa87f;
+            color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    /* Tema claro */
+}
 
 @media (prefers-color-scheme: light) {
+    /* Resolución 1440p */
+    @media (min-width: 2560px) {
         :root {
-            background-image: url('Assets/mountain.jpg');
-                background-size: cover;
-                font-family: 'cascadia code', cursive;
-                scale: 0.70;
+            background-image: url("Assets/claro.jpg");
+            background-size: contain;
+            font-family: "cascadia code", cursive;
+            scale: 0.7;
+        }
+
+        .cards {
+            display: grid;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-content: center;
+            grid-template-columns: auto auto auto auto auto auto auto;
+            gap: 20px;
+        }
+
+        .card {
+            position: static;
+            width: 32vh;
+            height: 27vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 12px;
+            gap: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            backdrop-filter: blur(4px);
+        }
+
+        .card img:hover {
+            transition: 1s;
+            scale: 1.2;
+        }
+
+        .card img {
+            width: 90%;
+            height: 90%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            left: -5px;
+            margin: auto;
+            width: 300;
+            height: 264px;
+            border-radius: 50px;
+            background-color: #1d151bc4;
+            backdrop-filter: blur(5px);
+            opacity: 0.2;
+            z-index: -10;
+            pointer-events: none;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card:hover::after {
+            filter: blur(30px);
+        }
+
+        .card:hover::before {
+            transition: 1s;
+            transform: rotateY(180deg) rotateZ(180deg);
+        }
+
+        .card::after {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            inset: 0;
+            transform: translate3d(0, 0, 0) scale(0.95);
+            filter: blur(20px);
+        }
+
+        .card-content {
+            text-align: end;
+        }
+
+        #title {
+            font-family: "cascadia code", cursive;
+            color: lightseagreen;
+            scale: 1.5;
+        }
+
+        .busq {
+            font-family: cascadia code;
+            font-size: 40px;
+            color: aliceblue;
+            background-color: rgba(202, 187, 126, 0.015);
+            backdrop-filter: blur(5px);
+            border: 4px groove #af7fa87f;
+            border-radius: 25px;
+            padding: 10px;
+            width: 50%;
+            height: 100%;
+            resize: none;
+            outline: none;
+            scale: 1;
+            transition: 0.3s;
+            margin-bottom: 50px;
+        }
+
+        .busq:hover {
+            transition: 0.5s;
+            border: 4px groove #af7fa87f;
+            scale: 1.2;
+            background-color: #af7fa87f;
+            color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         }
     }
 
+    /* Resolución 1080p */
+    @media (min-width: 1920px) and (max-width: 2559px) {
+        :root {
+            background-image: url("Assets/claro.jpg");
+            background-size: contain;
+            font-family: "cascadia code", cursive;
+            scale: 0.7;
+        }
 
+        .cards {
+            display: grid;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-content: center;
+            grid-template-columns: auto auto auto auto auto auto auto;
+            gap: 20px;
+        }
 
+        .card {
+            position: static;
+            width: 32vh;
+            height: 27vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 12px;
+            gap: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            backdrop-filter: blur(4px);
+        }
 
+        .card img:hover {
+            transition: 1s;
+            scale: 1.2;
+        }
 
-.cards {
-    display: grid;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    justify-content: center;
-    grid-template-columns: auto auto auto auto auto auto auto  ;
-    gap: 20px;
-}
+        .card img {
+            width: 90%;
+            height: 90%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
 
-.card {
-    position: static;
-    width: 32vh;
-    height: 27vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 12px;
-    gap: 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    backdrop-filter: blur(4px);
-}
+        .card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            left: -5px;
+            margin: auto;
+            width: 300;
+            height: 264px;
+            border-radius: 50px;
+            background-color: #1d151bc4;
+            backdrop-filter: blur(5px);
+            opacity: 0.2;
+            z-index: -10;
+            pointer-events: none;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
 
+        .card:hover::after {
+            filter: blur(30px);
+        }
 
-.card img:hover {
-    transition: 1s;
-    scale: 1.2;
-}
+        .card:hover::before {
+            transition: 1s;
+            transform: rotateY(180deg) rotateZ(180deg);
+        }
 
-.card img {
-    width: 90%;
-    height: 90%;
-    border-radius: 5px;
-    margin-bottom: 10px;
+        .card::after {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            inset: 0;
+            transform: translate3d(0, 0, 0) scale(0.95);
+            filter: blur(20px);
+        }
 
-}
+        .card-content {
+            text-align: end;
+        }
 
-.card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    left: -5px;
-    margin: auto;
-    width: 300;
-    height: 264px;
-    border-radius: 50px;
-    background-color: #af7fa87f;
-    backdrop-filter: blur(5px);
-    opacity: 0.2;
-    z-index: -10;
-    pointer-events: none;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+        #title {
+            font-family: "cascadia code", cursive;
+            color: lightseagreen;
+            scale: 1.5;
+        }
 
+        .busq {
+            font-family: cascadia code;
+            font-size: 40px;
+            color: aliceblue;
+            background-color: rgba(202, 187, 126, 0.015);
+            backdrop-filter: blur(5px);
+            border: 4px groove #af7fa87f;
+            border-radius: 25px;
+            padding: 10px;
+            width: 50%;
+            height: 100%;
+            resize: none;
+            outline: none;
+            scale: 1;
+            transition: 0.3s;
+            margin-bottom: 50px;
+        }
 
-.card:hover::after {
-    filter: blur(30px);
-}
-
-.card:hover::before {
-    
-    transition: 1s;
-    transform: rotateY(180deg) rotateZ(180deg);
-}
-
-
-.card::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    inset: 0;
-    transform: translate3d(0, 0, 0) scale(0.95);
-    filter: blur(20px);
-}
-
-.card-content {
-    text-align: end;
-}
-
-
-#title {
-    font-family: 'cascadia code', cursive;
-    color: lightseagreen;
-    scale: 1.5;
-    
-}
-
-.busq{
-    font-family: cascadia code;
-    font-size: 40px;
-    color: aliceblue;
-background-color: rgba(202, 187, 126, 0.015);
-    backdrop-filter: blur(5px);
-    border: 4px groove #af7fa87f;
-    border-radius: 25px;
-    padding: 10px;
-    width: 50%;
-    height: 100%;
-    resize: none;
-    outline: none;
-    scale: 1;
-    transition: 0.3s;
-margin-bottom: 50px;}
-
-
-    .busq:hover {
-    transition: 0.5s;
-    border: 4px groove #af7fa87f;
-    scale: 1.2;
-    background-color: #af7fa87f;
-    color: white;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        .busq:hover {
+            transition: 0.5s;
+            border: 4px groove #af7fa87f;
+            scale: 1.2;
+            background-color: #af7fa87f;
+            color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
     }
+}
