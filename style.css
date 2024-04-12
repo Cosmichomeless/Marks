@@ -121,7 +121,7 @@
     }
 
     /* Resolución 1080p */
-    @media (min-width: 1920px) and (max-width: 2559px) {
+    @media (max-width: 2559px) {
         :root {
             background-image: url("Assets/oscuro.jpg");
             background-size: contain;
@@ -361,7 +361,7 @@
     }
 
     /* Resolución 1080p */
-    @media (min-width: 1920px) and (max-width: 2559px) {
+    @media (max-width: 2559px) {
         :root {
             background-image: url("Assets/claro.jpg");
             background-size: contain;
