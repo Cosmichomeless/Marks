@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/twitch.svg"
-        : "/Assets/Clear/Twitch.svg";
+        : "./Assets/Clear/Twitch.svg";
     const youtubeElement = document.getElementById("twitch");
     youtubeElement.src = iconPath;
 });

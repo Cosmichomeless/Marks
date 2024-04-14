@@ -18,7 +18,7 @@
             color: aliceblue;
             background-color: rgba(202, 187, 126, 0.015);
             backdrop-filter: blur(5px);
-            border: 4px groove #af7fa87f;
+            border: 4px groove rgb(153, 153, 153);
             border-radius: 25px;
             padding: 10px;
             width: 50%;
@@ -26,17 +26,27 @@
             resize: none;
             outline: none;
             scale: 1;
-            transition: 0.3s;
+            transition: 0.5s;
             margin-bottom: 50px;
+
         }
 
         .busq:hover {
             transition: 0.5s;
-            border: 4px groove #af7fa87f;
+            border: 4px groove rgb(153, 153, 153);
             scale: 1.2;
-            background-color: #af7fa87f;
+            background-color: rgba(153, 153, 153, 0.373);
             color: white;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 300px rgb(255, 255, 255);
+        }
+
+        .busq:focus {
+            transition: 0.5s;
+            border: 4px groove rgb(153, 153, 153);
+            scale: 1.2;
+            background-color: rgba(153, 153, 153, 0.201);
+            color: white;
+            box-shadow: 0 0 300px rgb(255, 255, 255);
         }
 
         .cards {
@@ -52,7 +62,7 @@
         .card {
             position: static;
             width: 32vh;
-            height: 27vh;
+            height: 30vh;
             display: flex;
             flex-direction: column;
             justify-content: end;
@@ -61,27 +71,30 @@
             border-radius: 8px;
             cursor: pointer;
             backdrop-filter: blur(4px);
+            scale: 1;
         }
 
         .card img:hover {
             transition: 1s;
-            scale: 1.2;
+            scale: 0.9;
         }
 
         .card img {
-            width: 90%;
-            height: 90%;
+            width: 100%;
+            height: 100%;
             border-radius: 5px;
             margin-bottom: 10px;
+            scale: 0.6;
         }
 
         .card::before {
-            position: calc(50% - 150px);
-            top: 0;
+            content: "";
+            position: absolute;
+            inset: 0;
             left: -5px;
             margin: auto;
-            width: 300;
-            height: 264px;
+            width: 32vh;
+            height: 30vh;
             border-radius: 50px;
             background-color: #1d151bc4;
             backdrop-filter: blur(5px);
@@ -93,6 +106,7 @@
 
         .card:hover::after {
             filter: blur(30px);
+            box-shadow: 0 0 100px rgb(255, 255, 255);
         }
 
         .card:hover::before {
@@ -262,10 +276,48 @@
     /* Resolución 1440p */
     @media (min-width: 2560px) {
         :root {
-            background-image: url("/Assets/Wallpaper/oscuro.jpg");
+            background-image: url("./Assets/Wallpaper/clear.jpg");
             background-size: contain;
             font-family: "cascadia code", cursive;
             scale: 0.7;
+        }
+
+        .busq {
+
+            font-family: cascadia code;
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+            background-color: #1d151b1e;
+            backdrop-filter: blur(5px);
+            border: 4px groove rgb(153, 153, 153);
+            border-radius: 25px;
+            padding: 10px;
+            width: 50%;
+            height: 100%;
+            resize: none;
+            outline: none;
+            scale: 1;
+            transition: 0.5s;
+            margin-bottom: 50px;
+
+        }
+
+        .busq:hover {
+            transition: 0.5s;
+            border: 4px groove rgb(153, 153, 153);
+            scale: 1.2;
+            background-color: rgba(153, 153, 153, 0.373);
+            color: rgb(0, 0, 0);
+            box-shadow: 0 0 300px rgb(0, 0, 0);
+        }
+
+        .busq:focus {
+            transition: 0.5s;
+            border: 4px groove rgb(153, 153, 153);
+            scale: 1.2;
+            background-color: rgba(153, 153, 153, 0.201);
+            color: rgb(0, 0, 0);
+            box-shadow: 0 0 300px rgb(0, 0, 0);
         }
 
         .cards {
@@ -281,7 +333,7 @@
         .card {
             position: static;
             width: 32vh;
-            height: 27vh;
+            height: 30vh;
             display: flex;
             flex-direction: column;
             justify-content: end;
@@ -290,18 +342,20 @@
             border-radius: 8px;
             cursor: pointer;
             backdrop-filter: blur(4px);
+            scale: 1;
         }
 
         .card img:hover {
             transition: 1s;
-            scale: 1.2;
+            scale: 0.9;
         }
 
         .card img {
-            width: 90%;
-            height: 90%;
+            width: 100%;
+            height: 100%;
             border-radius: 5px;
             margin-bottom: 10px;
+            scale: 0.6;
         }
 
         .card::before {
@@ -310,8 +364,8 @@
             inset: 0;
             left: -5px;
             margin: auto;
-            width: 300;
-            height: 264px;
+            width: 32vh;
+            height: 30vh;
             border-radius: 50px;
             background-color: #1d151bc4;
             backdrop-filter: blur(5px);
@@ -323,6 +377,7 @@
 
         .card:hover::after {
             filter: blur(30px);
+            box-shadow: 0 0 100px rgb(0, 0, 0);
         }
 
         .card:hover::before {
@@ -347,43 +402,54 @@
             font-family: "cascadia code", cursive;
             color: lightseagreen;
             scale: 1.5;
-        }
-
-        .busq {
-            font-family: cascadia code;
-            font-size: 40px;
-            color: aliceblue;
-            background-color: rgba(202, 187, 126, 0.015);
-            backdrop-filter: blur(5px);
-            border: 4px groove #af7fa87f;
-            border-radius: 25px;
-            padding: 10px;
-            width: 50%;
-            height: 100%;
-            resize: none;
-            outline: none;
-            scale: 1;
-            transition: 0.3s;
-            margin-bottom: 50px;
-        }
-
-        .busq:hover {
-            transition: 0.5s;
-            border: 4px groove #af7fa87f;
-            scale: 1.2;
-            background-color: #af7fa87f;
-            color: white;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         }
     }
 
     /* Resolución 1080p */
     @media (max-width: 2559px) {
         :root {
-            background-image: url("/Assets/Wallpaper/oscuro.jpg");
+            background-image: url("./Assets/Wallpaper/clear.jpg");
             background-size: contain;
             font-family: "cascadia code", cursive;
             scale: 0.7;
+        }
+
+        .busq {
+
+            font-family: cascadia code;
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+            background-color: rgba(202, 187, 126, 0.015);
+            backdrop-filter: blur(5px);
+            border: 4px groove rgb(153, 153, 153);
+            border-radius: 25px;
+            padding: 10px;
+            width: 50%;
+            height: 100%;
+            resize: none;
+            outline: none;
+            scale: 1;
+            transition: 0.5s;
+            margin-bottom: 50px;
+
+        }
+
+        .busq:hover {
+            transition: 0.5s;
+            border: 4px groove rgb(153, 153, 153);
+            scale: 1.2;
+            background-color: rgba(153, 153, 153, 0.373);
+            color: rgb(0, 0, 0);
+            box-shadow: 0 0 300px rgb(0, 0, 0);
+        }
+
+        .busq:focus {
+            transition: 0.5s;
+            border: 4px groove rgb(153, 153, 153);
+            scale: 1.2;
+            background-color: rgba(153, 153, 153, 0.201);
+            color: rgb(0, 0, 0);
+            box-shadow: 0 0 300px rgb(0, 0, 0);
         }
 
         .cards {
@@ -399,7 +465,7 @@
         .card {
             position: static;
             width: 32vh;
-            height: 27vh;
+            height: 30vh;
             display: flex;
             flex-direction: column;
             justify-content: end;
@@ -408,18 +474,20 @@
             border-radius: 8px;
             cursor: pointer;
             backdrop-filter: blur(4px);
+            scale: 1;
         }
 
         .card img:hover {
             transition: 1s;
-            scale: 1.2;
+            scale: 0.9;
         }
 
         .card img {
-            width: 90%;
-            height: 90%;
+            width: 100%;
+            height: 100%;
             border-radius: 5px;
             margin-bottom: 10px;
+            scale: 0.6;
         }
 
         .card::before {
@@ -428,8 +496,8 @@
             inset: 0;
             left: -5px;
             margin: auto;
-            width: 300;
-            height: 264px;
+            width: 32vh;
+            height: 30vh;
             border-radius: 50px;
             background-color: #1d151bc4;
             backdrop-filter: blur(5px);
@@ -441,6 +509,7 @@
 
         .card:hover::after {
             filter: blur(30px);
+            box-shadow: 0 0 100px rgb(0, 0, 0);
         }
 
         .card:hover::before {
@@ -465,33 +534,6 @@
             font-family: "cascadia code", cursive;
             color: lightseagreen;
             scale: 1.5;
-        }
-
-        .busq {
-            font-family: cascadia code;
-            font-size: 40px;
-            color: aliceblue;
-            background-color: rgba(202, 187, 126, 0.015);
-            backdrop-filter: blur(5px);
-            border: 4px groove #af7fa87f;
-            border-radius: 25px;
-            padding: 10px;
-            width: 50%;
-            height: 100%;
-            resize: none;
-            outline: none;
-            scale: 1;
-            transition: 0.3s;
-            margin-bottom: 50px;
-        }
-
-        .busq:hover {
-            transition: 0.5s;
-            border: 4px groove #af7fa87f;
-            scale: 1.2;
-            background-color: #af7fa87f;
-            color: white;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         }
     }
 }
