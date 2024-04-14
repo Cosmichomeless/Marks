@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/youtube.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Youtube.svg";
     const youtubeElement = document.getElementById("youtube");
     youtubeElement.src = iconPath;
 });
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/whatsapp.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Whatsapp.svg";
     const youtubeElement = document.getElementById("whatsapp");
     youtubeElement.src = iconPath;
 });
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/twitch.svg"
-        : "./Assets/tiktok.svg";
+        : "/Assets/Clear/Twitch.svg";
     const youtubeElement = document.getElementById("twitch");
     youtubeElement.src = iconPath;
 });
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/twitter.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Twitter.svg";
     const youtubeElement = document.getElementById("twitter");
     youtubeElement.src = iconPath;
 });
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/instagram.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Instagram.svg";
     const youtubeElement = document.getElementById("instagram");
     youtubeElement.src = iconPath;
 });
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/reddit.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Reddit.svg";
     const youtubeElement = document.getElementById("reddit");
     youtubeElement.src = iconPath;
 });
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/github.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Github.svg";
     const youtubeElement = document.getElementById("github");
     youtubeElement.src = iconPath;
 });
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/spotify.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Spotify.svg";
     const youtubeElement = document.getElementById("spotify");
     youtubeElement.src = iconPath;
 });
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/esic.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Esic.svg";
     const youtubeElement = document.getElementById("esic");
     youtubeElement.src = iconPath;
 });
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/outlook.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Outlook.svg";
     const youtubeElement = document.getElementById("outlook");
     youtubeElement.src = iconPath;
 });
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/gmail.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Gmail.svg";
     const youtubeElement = document.getElementById("gmail");
     youtubeElement.src = iconPath;
 });
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/amazon.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Amazon.svg";
     const youtubeElement = document.getElementById("amazon");
     youtubeElement.src = iconPath;
 });
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/corte.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Corte.svg";
     const youtubeElement = document.getElementById("compra");
     youtubeElement.src = iconPath;
 });
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/linkedin.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Linkedin.svg";
     const youtubeElement = document.getElementById("linkedin");
     youtubeElement.src = iconPath;
 });
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/mega.svg"
-        : "./Assets/mega.svg";
+        : "./Assets/Clear/Mega.svg";
     const youtubeElement = document.getElementById("mega");
     youtubeElement.src = iconPath;
 });
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/gpt.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Gpt.svg";
     const youtubeElement = document.getElementById("gpt");
     youtubeElement.src = iconPath;
 });
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/netflix.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Netflix.svg";
     const youtubeElement = document.getElementById("netflix");
     youtubeElement.src = iconPath;
 });
@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/dazn.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Dazn.svg";
     const youtubeElement = document.getElementById("dazn");
     youtubeElement.src = iconPath;
 });
@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/PrimeVideo.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/PrimeVideo.svg";
     const youtubeElement = document.getElementById("prime");
     youtubeElement.src = iconPath;
 });
@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/movistar.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Movistar.svg";
     const youtubeElement = document.getElementById("movistar");
     youtubeElement.src = iconPath;
 });
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ).matches;
     const iconPath = isDarkTheme
         ? "./Assets/Dark/disney.svg"
-        : "./Assets/tiktok.svg";
+        : "./Assets/Clear/Disney.svg";
     const youtubeElement = document.getElementById("disney");
     youtubeElement.src = iconPath;
 });

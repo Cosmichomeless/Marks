@@ -5,7 +5,7 @@
     /* Resolución 1440p */
     @media (min-width: 1302px) {
         :root {
-            background-image: url("./Assets/Wallpaper/yinyang.png");
+            background-image: url("./Assets/Wallpaper/black_arena.jpg");
             background-size: contain;
             font-family: "cascadia code", cursive;
             scale: 0.7;
