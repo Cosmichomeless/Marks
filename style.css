@@ -29,6 +29,7 @@
             transition: 0.5s;
             margin-bottom: 50px;
 
+
         }
 
         .busq:hover {
@@ -276,7 +277,7 @@
     /* Resolución 1440p */
     @media (min-width: 2560px) {
         :root {
-            background-image: url("./Assets/Wallpaper/clear.jpg");
+            background-image: url("./Assets/Wallpaper/waves.jpg");
             background-size: contain;
             font-family: "cascadia code", cursive;
             scale: 0.7;
@@ -408,7 +409,7 @@
     /* Resolución 1080p */
     @media (max-width: 2559px) {
         :root {
-            background-image: url("./Assets/Wallpaper/clear.jpg");
+            background-image: url("./Assets/Wallpaper/waves.jpg");
             background-size: contain;
             font-family: "cascadia code", cursive;
             scale: 0.7;
