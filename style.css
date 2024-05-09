@@ -3,10 +3,10 @@
 /* Tema oscuro */
 @media (prefers-color-scheme: dark) {
     /* Resolución 1440p */
-    @media (min-width: 1302px) {
+    @media (min-width: 2560px) {
         :root {
             background-image: url("./Assets/Wallpaper/black_arena.jpg");
-            background-size: contain;
+            background-size: cover;
             font-family: "cascadia code", cursive;
             scale: 0.7;
         }
@@ -277,8 +277,8 @@
     /* Resolución 1440p */
     @media (min-width: 2560px) {
         :root {
-            background-image: url("./Assets/Wallpaper/rainbow.jpg");
-            background-size: contain;
+            background-image: url("./Assets/Wallpaper/green.jpg");
+            background-size: cover;
             font-family: "cascadia code", cursive;
             scale: 0.7;
         }
@@ -409,7 +409,7 @@
     /* Resolución 1080p */
     @media (max-width: 2559px) {
         :root {
-            background-image: url("./Assets/Wallpaper/rainbow.jpg");
+            background-image: url("./Assets/Wallpaper/green.jpg");
             background-size: contain;
             font-family: "cascadia code", cursive;
             scale: 0.7;
