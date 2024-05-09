@@ -270,6 +270,89 @@
 
 
     }
+
+    @media (max-width: 1200px) {
+        :root {
+            background-image: url("./Assets/Wallpaper/green.jpg");
+            background-size: contain;
+            font-family: "cascadia code", cursive;
+            scale: 0.7;
+        }
+
+        .busq {
+            font-family: cascadia code;
+            font-size: 30px;
+            color: aliceblue;
+            background-color: rgba(202, 187, 126, 0.015);
+            backdrop-filter: blur(5px);
+            border: 4px groove rgb(153, 153, 153);
+            border-radius: 25px;
+            padding: 10px;
+            width: 70%;
+            height: 100%;
+            resize: none;
+            outline: none;
+            scale: 1;
+            transition: 0.5s;
+            margin-bottom: 50px;
+        }
+
+        .busq:hover {
+            transition: 0.5s;
+            border: 4px groove rgb(153, 153, 153);
+            scale: 1.2;
+            background-color: rgba(153, 153, 153, 0.373);
+            color: white;
+            box-shadow: 0 0 300px rgb(255, 255, 255);
+        }
+
+        .busq:focus {
+            transition: 0.5s;
+            border: 4px groove rgb(153, 153, 153);
+            scale: 1.2;
+            background-color: rgba(153, 153, 153, 0.201);
+            color: white;
+            box-shadow: 0 0 300px rgb(255, 255, 255);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 20%;
+            justify-content: center;
+
+
+        }
+
+        .card {
+            position: static;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 20%;
+            border-radius: 8px;
+            cursor: pointer;
+            backdrop-filter: blur(4px);
+            scale: 1;
+        }
+
+        .card img:hover {
+            transition: 1s;
+            scale: 0.9;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+        }
+    }
 }
 
 /* Tema claro */
@@ -535,6 +618,89 @@
             font-family: "cascadia code", cursive;
             color: lightseagreen;
             scale: 1.5;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        :root {
+            background-image: url("./Assets/Wallpaper/green.jpg");
+            background-size: contain;
+            font-family: "cascadia code", cursive;
+            scale: 0.7;
+        }
+
+        .busq {
+            font-family: cascadia code;
+            font-size: 30px;
+            color: aliceblue;
+            background-color: rgba(202, 187, 126, 0.015);
+            backdrop-filter: blur(5px);
+            border: 4px groove rgb(153, 153, 153);
+            border-radius: 25px;
+            padding: 10px;
+            width: 70%;
+            height: 100%;
+            resize: none;
+            outline: none;
+            scale: 1;
+            transition: 0.5s;
+            margin-bottom: 50px;
+        }
+
+        .busq:hover {
+            transition: 0.5s;
+            border: 4px groove rgb(153, 153, 153);
+            scale: 1.2;
+            background-color: rgba(153, 153, 153, 0.373);
+            color: white;
+            box-shadow: 0 0 300px rgb(255, 255, 255);
+        }
+
+        .busq:focus {
+            transition: 0.5s;
+            border: 4px groove rgb(153, 153, 153);
+            scale: 1.2;
+            background-color: rgba(153, 153, 153, 0.201);
+            color: white;
+            box-shadow: 0 0 300px rgb(255, 255, 255);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 20%;
+            justify-content: center;
+
+
+        }
+
+        .card {
+            position: static;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 20%;
+            border-radius: 8px;
+            cursor: pointer;
+            backdrop-filter: blur(4px);
+            scale: 1;
+        }
+
+        .card img:hover {
+            transition: 1s;
+            scale: 0.9;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
         }
     }
 }
